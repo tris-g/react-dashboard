@@ -1,25 +1,23 @@
-import { useState } from 'react'
-import './App.css'
-import { Routes, Route, Link } from "react-router-dom";
+import { useState } from 'react';
+import { Routes, Route } from "react-router-dom";
+import './App.css';
+import Navbar from './components/Navbar.jsx';
 
 function Home() {
   return <h2>Home</h2>;
 }
-function About() {
-  return <h2>About</h2>;
+function Settings() {
+  return <h2>Settings</h2>;
 }
 
 function App() {
   return (
     <>
-      <nav>
-        <Link to="/">Home</Link>{" | "}
-        <Link to="/about">About</Link>
-      </nav>
+      <Navbar />
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/settings" element={<Settings />} />
         <Route path="*" element={<h2>Not Found</h2>} />
       </Routes>
     </>
