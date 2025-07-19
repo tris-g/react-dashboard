@@ -27,7 +27,11 @@ function Home() {
 }
 
 function Settings() {
-  return <h2>Settings</h2>;
+  return (
+    <main>
+      <h3>Settings</h3>
+    </main>
+  );
 }
 
 function App() {
