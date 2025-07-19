@@ -1,9 +1,39 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.app-content {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
 h3 {
-    margin: 0;
-    padding: 1rem 0rem 0rem 1.3rem;
+  margin: 0;
+  padding: 1rem 0 0 1.3rem;
+  flex-shrink: 0;
+}
+
+.dashboard-grid {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 
 .metric-grid {
+  flex: 0 0 auto;
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
@@ -11,30 +41,39 @@ h3 {
   box-sizing: border-box;
 }
 
-/* Flex items grow equally and wrap, with a responsive basis */
 .metric-grid > * {
-  flex: 1 1 calc((100% - 3rem) / 4); /* 4 columns by default */
+  flex: 1 1 calc((100% - 3rem) / 4);
   min-width: calc((100% - 3rem) / 4); 
   box-sizing: border-box;
 }
 
 @media (max-width: 1024px) {
   .metric-grid > * {
-    flex: 1 1 calc((100% - 2rem) / 3); /* 3 columns */
+    flex: 1 1 calc((100% - 2rem) / 3);
     min-width: calc((100% - 2rem) / 3);
   }
 }
 
 @media (max-width: 768px) {
   .metric-grid > * {
-    flex: 1 1 calc((100% - 1rem) / 2); /* 2 columns */
+    flex: 1 1 calc((100% - 1rem) / 2);
     min-width: calc((100% - 1rem) / 2);
   }
 }
 
 @media (max-width: 480px) {
   .metric-grid > * {
-    flex: 1 1 100%; /* 1 column */
+    flex: 1 1 100%;
     min-width: 100%;
   }
+}
+
+.chart-grid {
+  flex: 1;
+  overflow: hidden;
+  padding: 1rem;
+  box-sizing: border-box;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
 }
