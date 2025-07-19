@@ -1,0 +1,20 @@
+.metric-card {
+  background-color: var(--color-bg);
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px var(--color-shadow);
+  padding: 1rem;
+  width: 12rem;
+  box-sizing: border-box;
+}
+
+.metric-card h4 {
+  font-size: 1rem;
+  color: var(--color-subtext);
+  margin: 0;
+}
+
+.metric-card .metric-value {
+  margin-top: 0.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
