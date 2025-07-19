@@ -22,9 +22,9 @@ const LiveBitcoinChart = () => {
       {
         label: 'BTC/USDT',
         data: dataPoints,
-        borderColor: '#4ade80',
-        backgroundColor: '#4ade80',
-        tension: 0.3,
+        borderColor: '#61dafb',
+        backgroundColor: '#61dafb',
+        tension: 0,
         pointRadius: 0,
         fill: false,
       },
