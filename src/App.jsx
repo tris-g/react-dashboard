@@ -10,7 +10,7 @@ import LiveBitcoinChart from './components/LiveBitcoinChart.jsx';
 function Home() {
   return (
     <main>
-      <h3>Dashboard</h3>
+      <h2>Dashboard</h2>
       <div className="dashboard-grid">
         <div className='metric-grid'>
           <MetricCard title="Active Users" value={239} />
@@ -29,7 +29,7 @@ function Home() {
 function Settings() {
   return (
     <main>
-      <h3>Settings</h3>
+      <h2>Settings</h2>
     </main>
   );
 }
